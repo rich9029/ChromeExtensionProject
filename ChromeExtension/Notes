@@ -1,0 +1,34 @@
+/*
+
+storage get sync.get to get something from storage after we storage.sync.set
+
+
+scripting
+https://developer.chrome.com/docs/extensions/reference/scripting/
+
+
+options.html
+
+1. create a HTML file -> include some code to execute in HTML
+    a. run a script in the bottom of the html file like so ... <script src="options.js"></script>
+2. Add options logic - create a JS file 
+    a. in here we specify what happens on certain events + event listeners
+3. Register the page into manifest
+
+
+
+NOTES
+If require API (starwars) - put into permissions
+
+Chrome has default objects for us to work with 
+
+Common problems:
+    Q: Something not working or loading?
+    A: make sure to check that the naming convention, file paths, file pointers etc are the same - double check spelling each time
+
+    Q:
+    A:
+
+    Q:
+    A:
+*/
