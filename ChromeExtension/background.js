@@ -21,19 +21,16 @@ const studyFilter = [
     "*://*.scorecardresearch.com/*",
     "*://*.zedo.com/*",    
     "*://*.gemini.*",
-    "*s.yimg.com/*",
-    "*.akamaized.*",
+    "*://*.yimg.com/*",
+    "*://*.akamaized./*",
     "*://*.w3.org/*",
-    "//platform.bidgear.com/*",
-    "*.github.com",
-    "*.mozilla.org/*"
-
-
-
+    "*://*platform.bidgear.com/*",
+    "*://*.github.com/*",
+    "*://*.mozilla.org/*",
 
 ]
 
-chrome.webRequest.onBeforeRequest.addListener(
+chrome.declarativeNetRequest.onBeforeRequest.addListener(
     function(details) {return {cancel:true}},
     {urls: studyFilter},
     ["blocking"]

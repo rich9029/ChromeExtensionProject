@@ -44,18 +44,27 @@ changeColor.addEventListener("click", async () => {
 //Find all images on a page and replace with kitty cats
 function setKittyCatImages() {
   let elements = document.querySelectorAll("img")
-  console.log(elements);
-  console.log(elements[0].src);
+
   //elements is an array -> we will go iterate through the elements and access the individual keys
   for (let i = 0; i< elements.length; i++){
     elements[i].src = "https://http.cat/415"
   }
 
   //gets rid of the aside bar in yahoo
-  let aside = document.getElementById("Aside")
-  let ads = document.querySelectorAll('alt')
-  aside.textContent = '';
-  ads.textContent = ''
+  let asider = document.getElementById("Aside");
+  let viewerAside = document.getElementById("viewer-aside");
+  let ads = document.querySelectorAll('alt');
+  let iFrame = document.querySelectorAll('iframe');
+
+  console.log(iFrame);
+  
+  for (let i = 0; i< iFrame.length; i++){
+    iFrame[i].remove();
+  }
+
+  if (asider) return asider.textContent = '';
+  if (ads) return ads.textContent = '';
+  if (viewerAside) return viewerAside.textContent = '';
 
 
   return elements;
