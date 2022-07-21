@@ -53,18 +53,15 @@ function setKittyCatImages() {
 
   //gets rid of the aside bar in yahoo
   let aside = document.getElementById("Aside")
+  let ads = document.querySelectorAll('alt')
   aside.textContent = '';
+  ads.textContent = ''
 
 
   return elements;
   //kitty file path ./images/415.jpeg./images/415.jpeg
 }
 
-
-function sleepyKitty(){
-  let aside = document.querySelectorAll("Aside")
-      aside.textContent = '';
- }
 
 
   // console.log(nativeAds);
