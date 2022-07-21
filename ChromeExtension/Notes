@@ -17,6 +17,12 @@ options.html
 
 
 
+IDEAS
+- When on active tab search for all html elements with an img tag and replace them selected images.
+- 
+
+
+
 NOTES
 If require API (starwars) - put into permissions
 
@@ -31,4 +37,9 @@ Common problems:
 
     Q:
     A:
+
+GOAL:  Identify and change all Images on webpage to be image of our choice
+-Find a way to access all tags with img and chance src to = something else
+
 */
+

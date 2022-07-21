@@ -1,5 +1,5 @@
 
-let color = '#0F4366';
+let  = '#0F4366';
 
 chrome.runtime.onInstalled.addListener(()=> {
     //we add the color into storage API 
